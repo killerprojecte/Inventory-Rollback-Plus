@@ -88,7 +88,7 @@ public class MySQL {
                     ConfigData.isMySQLVerifyCertificate() +
                     "&allowPublicKeyRetrieval=" +
                     ConfigData.isMySQLPubKeyRetrievalAllowed() +
-                    "&characterEncoding=UTF-8",
+                    "&characterEncoding=UTF-8&autoReconnect=true",
                     ConfigData.getMySQLUsername(),
                     ConfigData.getMySQLPassword());
         }
